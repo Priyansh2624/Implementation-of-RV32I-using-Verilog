@@ -191,11 +191,9 @@ The additional carry bit is discarded.
 
 * Verilog HDL
 * Icarus Verilog
-* GTKWave (if waveform simulation is performed)
+* GTKWave
 
-## 📚 Learning Objective
 
-This project demonstrates how a basic arithmetic operation can be described at the **RTL level using Verilog HDL**.
 
 It also illustrates an important design decision: the interface contains only the signals required by the specification. Since this module only needs to return a 32-bit sum, external carry-in and carry-out signals are not included.
 
