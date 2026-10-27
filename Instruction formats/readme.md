@@ -526,36 +526,7 @@ Common RV32I opcodes:
 
 ---
 
-# 12. Quick Revision
 
-```text
-R → Register + Register
-I → Immediate / Load / JALR
-S → Store
-B → Branch
-U → Upper Immediate
-J → Jump
-```
-
-Remember:
-
-```text
-R = Registers
-I = Immediate
-S = Store
-B = Branch
-U = Upper immediate
-J = Jump
-```
-
-### Most important exam point
-
-All RV32I instructions are **32 bits**, but the fields are arranged differently depending on the instruction format.
-
-```text
-R → funct7 | rs2 | rs1 | funct3 | rd | opcode
-I → imm    | rs1 | funct3 | rd | opcode
-S → imm    | rs2 | rs1 | funct3 | imm | opcode
 B → split immediate | rs2 | rs1 | funct3 | split immediate | opcode
 U → imm[31:12] | rd | opcode
 J → split immediate | rd | opcode
